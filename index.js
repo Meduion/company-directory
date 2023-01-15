@@ -3,6 +3,7 @@ const fs = require('fs');
 const Manager = require(`./lib/Manager`);
 const Engineer = require(`./lib/Engineer`);
 const Intern = require(`./lib/Intern`);
+const html = require(`./lib/generateHTML`);
 
 console.log(`\nHello, welcome to the Company Directory App. Please follow the prompts to add team members!\n`);
 
@@ -181,18 +182,16 @@ class Directory {
                     case 'Add Intern':
                         this.addIntern();
                         break;
+                    case 'Finish':
+                        this.writeToFile(`index.html`, html(companyDirectory));
                 }
             })
     }
 
-    writeToFile (filename, data) {
+    writeToFile (fileName, data) {
         fs.writeFile(fileName, data, (error) =>
             error ? console.error(error) : console.log `Writing File.`
         );
-    }
-
-    finish () {
-        
     }
 }
 
