@@ -63,7 +63,7 @@ class Directory {
             .then((response) => {
                 const manager = new Manager(response.name, response.id, response.email, response.office);
                 this.companyMembers.push(manager);
-                console.log(companyDirectory.companyMembers);
+                // console.log(companyDirectory.companyMembers);
                 this.addEmployees();
             });
     }
@@ -111,7 +111,7 @@ class Directory {
             .then((response) => {
                 const engineer = new Engineer(response.name, response.id, response.email, response.github);
                 this.companyMembers.push(engineer);
-                console.log(companyDirectory.companyMembers);
+                // console.log(companyDirectory.companyMembers);
                 this.addEmployees();
             });
     }
@@ -159,7 +159,7 @@ class Directory {
             .then((response) => {
                 const intern = new Intern(response.name, response.id, response.email, response.school);
                 this.companyMembers.push(intern);
-                console.log(companyDirectory.companyMembers);
+                // console.log(companyDirectory.companyMembers);
                 this.addEmployees();
             });
     }
