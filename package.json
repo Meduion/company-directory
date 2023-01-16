@@ -2,5 +2,26 @@
   "dependencies": {
     "inquirer": "^8.2.4",
     "jest": "^29.3.1"
-  }
+  },
+  "name": "company-directory",
+  "description": "CLI app to create a company directory.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meduion/company-directory.git"
+  },
+  "author": "Brian Wyatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meduion/company-directory/issues"
+  },
+  "homepage": "https://github.com/Meduion/company-directory#readme"
 }
