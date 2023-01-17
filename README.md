@@ -17,6 +17,8 @@
 
   Open the index.js file in terminal and use node index.js to run the program. Follow the provided prompts to build your team, adding a manager and then as many     engineers or interns as you wish. Select finish when you're done and an html page displaying your team will be generated.
   
+  A video of the app in action can be accessed by clicking [HERE](https://drive.google.com/file/d/1T9HTAvA-Un03V0p13962HTiAEt7rQgda/view?usp=share_link)
+  
   ![Company directory inquirer prompt demo](./assets/images/inquirer.jpg)
 
   ## License
